@@ -1,3 +1,4 @@
+'''
 def solve1928():
     b64 = []
     b64_0_25 = list(map(lambda x: chr(x), range(65, 91)))
@@ -37,4 +38,22 @@ def solve1928():
 
 if __name__ == "__main__":
     solve1928()
+    #TGlmZSBpdHNlbGYgaXMgYSBxdW90YXRpb24u
+'''
 
+def solve1928():
+    table = {keyTable: valueTable for valueTable, keyTable in enumerate('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/')}
+    for testCase in range(1,int(input()) + 1):
+        words = input()
+        bit_l = ''.join([bin(table[i])[2:].zfill(6) for i in words])
+        result = ''.join(chr(int(bit_l[j:j+8],2)) for j in range(0,len(bit_l),8))
+        print(f"#{testCase} {result}")
+
+    pass
+
+if __name__ == "__main__":
+    solve1928()
+
+
+'''
+'''
