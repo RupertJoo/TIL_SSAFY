@@ -1,3 +1,4 @@
+'''
 # def boj17425():
 #     for _ in range(int(input())):
 #         n = int(input())
@@ -10,6 +11,7 @@
 
 # if __name__ == "__main__":
 #     x = boj17425()
+'''
 '''
 import sys
 def boj17425():
